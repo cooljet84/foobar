@@ -7,6 +7,9 @@ import (
 )
 
 
+func YourHandler(w http.ResponseWriter, r *http.Request) {
+    w.Write([]byte("Gorilla!!!\n"))
+}
 
 func hello(w http.ResponseWriter, r *http.Request) {
   vars := mux.Vars(r)
